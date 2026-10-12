@@ -302,6 +302,59 @@ footer .fig:hover{color:#fff}
   .sitem{grid-template-columns:56px 1fr}
 }
 @media (max-width:720px){.tcards{grid-template-columns:repeat(3,1fr);gap:10px}.tcards li{padding:18px 4px 14px}.tcards b{font-size:13px}}
+.alt-lead{font-size:clamp(18px,2.3vw,22px);font-weight:700;color:var(--deep);letter-spacing:.08em;margin-top:8px}
+.alt3{max-width:640px;margin:26px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.alt3 li{background:#fff;border-radius:18px;padding:22px 8px 18px;display:flex;flex-direction:column;align-items:center;gap:6px;box-shadow:0 10px 24px -20px rgba(217,63,99,.7)}
+.alt3 b{color:var(--deep);font-size:clamp(14px,1.6vw,16px);letter-spacing:.04em;line-height:1.5;margin-top:4px}
+.alt3 span{color:var(--sub);font-size:12px;line-height:1.5}
+.alt-end{margin-top:2em !important;color:var(--rose);font-weight:700;font-size:clamp(16px,1.9vw,19px);letter-spacing:.08em;line-height:1.8}
+@media (max-width:720px){.alt3{gap:8px}.alt3 li{padding:16px 4px 14px}.alt3 b{font-size:13px}}
+.fifty{max-width:420px;margin:10px auto 0;background:#fff;border-radius:24px;padding:28px 20px 26px;box-shadow:0 18px 40px -28px rgba(217,63,99,.7);position:relative;overflow:hidden}
+.fifty::before{content:"";position:absolute;right:0;top:0;width:90px;height:90px;background:linear-gradient(225deg,rgba(255,103,132,.3),rgba(255,103,132,0) 62%);clip-path:polygon(100% 0,0 0,100% 100%)}
+.f-num{font-family:var(--num);font-weight:300;font-size:clamp(72px,12vw,104px);line-height:1;color:var(--rose);letter-spacing:.02em}
+.f-num small{font-family:var(--jp);font-size:18px;font-weight:700;color:var(--deep);margin-left:6px;letter-spacing:.1em}
+.f-name{margin-top:12px !important;font-weight:700;color:var(--deep);font-size:clamp(18px,2.3vw,22px);letter-spacing:.12em}
+.f-who{margin-top:8px !important;color:var(--sub);font-size:clamp(13px,1.5vw,15px);line-height:1.8}
+.sgrid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sgrid li{position:relative;background:#fff;border-radius:20px;padding:30px 14px 22px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 12px 28px -22px rgba(217,63,99,.7)}
+.sgrid .ic{width:40px;height:40px}
+.sgrid .sno{position:absolute;top:12px;left:16px;font-family:var(--num);font-weight:300;color:var(--pink);font-size:18px;line-height:1}
+.sgrid b{color:var(--deep);font-size:clamp(16px,1.9vw,19px);letter-spacing:.08em;margin-top:4px}
+.sgrid .stag{color:var(--sub);font-size:clamp(12px,1.35vw,13px);line-height:1.6}
+.snote{margin-top:22px !important;color:var(--faint);font-size:12px;line-height:1.7}
+@media (max-width:720px){.sgrid{grid-template-columns:1fr 1fr;gap:10px}.sgrid li{padding:26px 8px 18px}.sgrid li:last-child{grid-column:1/-1}}
+.card .free{margin:0 0 22px}
+.nomatter{display:inline-block;margin-top:6px !important;padding:10px 22px;border-radius:12px;background:#fff;border:2px solid var(--pink);color:var(--rose);font-weight:700;letter-spacing:.08em;font-size:clamp(15px,1.8vw,17px)}
+.fifty{max-width:460px}
+.f-free{margin-top:18px !important;display:flex;justify-content:center;align-items:center;gap:10px;color:var(--deep);font-weight:600;font-size:clamp(13px,1.5vw,15px);line-height:1.6;border-top:1px solid var(--line);padding-top:18px}
+.fifty .btn{margin-top:16px}
+.tcards li i{font-style:normal;font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--sub);border-top:1px solid var(--line);padding-top:8px;width:70%;margin-top:2px}
+.tcards li.you{background:linear-gradient(160deg,#FF8FA6,#D93F63);box-shadow:0 14px 30px -18px rgba(217,63,99,.8)}
+.tcards li.you .ic{stroke:#fff}
+.tcards li.you b,.tcards li.you i{color:#fff;border-color:rgba(255,255,255,.45)}
+.t-end{margin-top:2.2em !important;color:var(--rose);font-weight:700;font-size:clamp(16px,2vw,20px);letter-spacing:.08em}
+.tcards li:nth-child(2),.tcards li:nth-child(4){transform:none}
+.tcards li{justify-content:flex-start}
+.tcards li b{min-height:3em;display:flex;align-items:center;justify-content:center}
+.tcards li i{margin-top:auto}
+/* mada redesign */
+.mada{display:inline-flex;flex-direction:column;gap:10px;margin-top:18px;text-align:left}
+.mada li{display:flex;align-items:baseline;gap:14px;font-weight:500 !important;color:var(--text) !important;font-size:clamp(16px,2vw,20px) !important;line-height:1.7 !important;letter-spacing:.06em;
+  background:rgba(255,255,255,.72);border-radius:14px;padding:10px 20px 10px 16px;box-shadow:0 10px 26px -22px rgba(217,63,99,.8)}
+.mada li:nth-child(2){margin-left:1.6em}
+.mada li:nth-child(3){margin-left:3.2em}
+.mada em{font-style:normal;color:var(--rose);font-weight:700;font-size:.82em;letter-spacing:.1em;flex-shrink:0}
+.mada b{color:var(--deep);font-weight:800;font-size:1.12em;background:linear-gradient(transparent 68%,rgba(255,103,132,.22) 68%)}
+@media (max-width:720px){.mada li{padding:9px 14px 9px 12px;gap:10px}.mada li:nth-child(2){margin-left:.8em}.mada li:nth-child(3){margin-left:1.6em}}
+/* mada v2 : editorial 3 columns */
+.mada2{display:grid;grid-template-columns:repeat(3,1fr);max-width:720px;margin:22px auto 0}
+.mada2 li{display:flex;flex-direction:column;align-items:center;padding:6px 10px}
+.mada2 li+li{border-left:1px solid rgba(217,63,99,.28)}
+.m-pre{font-size:clamp(12px,1.4vw,14px);color:var(--sub);letter-spacing:.06em;line-height:1.6}
+.mada2 b{font-size:clamp(30px,4.4vw,44px);font-weight:700;color:var(--deep);letter-spacing:.08em;line-height:1.3;margin:4px 0 2px}
+.mada2 li:nth-child(3) b{color:var(--rose)}
+.m-suf{font-size:clamp(13px,1.5vw,15px);color:var(--deep);letter-spacing:.08em}
+@media (max-width:720px){.mada2{grid-template-columns:repeat(3,1fr)}.mada2 li{padding:4px 4px}.m-pre{font-size:11px;letter-spacing:0}.mada2 b{font-size:26px;letter-spacing:.02em}}
 </style>
 </head>
 <body>
@@ -314,10 +367,10 @@ footer .fig:hover{color:#fff}
   <div class="inner">
     <h1 class="catch"><span class="w l1"><em class="suki">好き</em>で、はじめた。</span><br><span class="w l2"><em class="suki">好き</em>だけで、<span class="mk">終わらせない。</span></span></h1>
     <p class="h-lead"><span class="w">あなたが</span><span class="w">生み出したブランドには、</span></p>
-    <ul class="mada">
-      <li>まだ、出会っていないお客様がいる。</li>
-      <li>まだ、立っていない売り場がある。</li>
-      <li>まだ、見たことのない未来がある。</li>
+    <ul class="mada2">
+      <li><span class="m-pre">まだ、<br>出会っていない</span><b>お客様</b><span class="m-suf">がいる。</span></li>
+      <li><span class="m-pre">まだ、<br>立っていない</span><b>売り場</b><span class="m-suf">がある。</span></li>
+      <li><span class="m-pre">まだ、<br>見たことのない</span><b>未来</b><span class="m-suf">がある。</span></li>
     </ul>
     <p class="h-strong"><span class="w">その可能性を、</span><span class="w">私たちがサポートします。</span></p>
     <p class="h-body"><span class="w">あなたの世界観は、</span><span class="w">そのままに。</span><br><span class="w">出店も、</span><span class="w">経営も、</span><span class="w">その先の挑戦も。</span><br><span class="w">あなたのブランドの、</span><span class="w">次のステージを一緒に。</span></p>
@@ -353,14 +406,13 @@ footer .fig:hover{color:#fff}
   <div class="wrap c">
     <h2 class="rv"><span class="w">必要な力は、</span><span class="w">ひとつではありません。</span></h2>
     <ul class="tcards rv">
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 4.8L19 10l-4.8 2.2L12 17l-2.2-4.8L5 10l4.8-2.2z"/><path d="M19 17l.8 1.7 1.7.8-1.7.8L19 22l-.8-1.7-1.7-.8 1.7-.8z"/></svg><b>つくる</b></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l6 4V6L7 10z"/><path d="M16.5 9a4 4 0 010 6"/><path d="M19 6.5a7.5 7.5 0 010 11"/></svg><b>伝える</b></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg><b>売り場を<br>つくる</b></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg><b>数字を<br>管理する</b></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 15c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/></svg><b>大きく<br>育てる</b></li>
+      <li class="you"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 4.8L19 10l-4.8 2.2L12 17l-2.2-4.8L5 10l4.8-2.2z"/><path d="M19 17l.8 1.7 1.7.8-1.7.8L19 22l-.8-1.7-1.7-.8 1.7-.8z"/></svg><b>つくる</b><i>あなた</i></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l6 4V6L7 10z"/><path d="M16.5 9a4 4 0 010 6"/><path d="M19 6.5a7.5 7.5 0 010 11"/></svg><b>伝える</b><i>一緒に</i></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg><b>売り場を<br>つくる</b><i>一緒に</i></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg><b>数字を<br>管理する</b><i>一緒に</i></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 15c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/></svg><b>大きく<br>育てる</b><i>一緒に</i></li>
     </ul>
-    <p class="rv"><span class="w">すべてを一人で</span><span class="w">持っている必要は</span><span class="w">ありません。</span></p>
-    <p class="rv em"><span class="w">つくる人が、</span><span class="w">つくることに</span><span class="w">夢中でいられる。</span><br><span class="w">そんなブランドの育て方が</span><span class="w">あってもいい。</span></p>
+    <p class="t-end rv"><span class="w">つくる人が、</span><span class="w">つくることに夢中でいられるように。</span></p>
   </div>
 </section>
 <section class="journey">
@@ -374,13 +426,13 @@ footer .fig:hover{color:#fff}
       <li><span><span class="w">そして、</span><span class="w">海の向こうへ。</span></span></li>
     </ol>
     <div class="read">
-      <p class="rv"><span class="w">もちろん、</span><span class="w">大きくすることだけが</span><span class="w">正解ではありません。</span></p>
-      <ul class="alt rv">
-        <li><span>今の規模のまま、</span><b>もっと利益を残せるブランドにしたい。</b></li>
-        <li><span>自分のペースを大切にしながら、</span><b>長く愛されるブランドにしたい。</b></li>
-        <li><span>こだわりの会場で、</span><b>単独のポップアップを開きたい。</b></li>
+      <p class="alt-lead rv">大きくするだけが、正解じゃない。</p>
+      <ul class="alt3 rv">
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg><b>利益を残す</b><span>今の規模のままで</span></li>
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 15c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/></svg><b>長く愛される</b><span>自分のペースで</span></li>
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg><b>単独<br>ポップアップ</b><span>こだわりの会場で</span></li>
       </ul>
-      <p class="rv em"><span class="w">ブランドの成功を、</span><span class="w">誰かのものさしで</span><span class="w">決めなくていい。</span><br><span class="w">どんな未来を目指すのかは、</span><span class="w">あなたが決める。</span></p>
+      <p class="alt-end rv">どんな未来を目指すかは、<br>あなたが決める。</p>
     </div>
   </div>
 </section>
@@ -397,34 +449,9 @@ footer .fig:hover{color:#fff}
   </div>
 </section>
 <section class="do">
-  <div class="wrap">
+  <div class="wrap c">
     <h2 class="rv">ブランドの未来を広げる、5つのサポート。</h2>
-    <div class="sitems"><div class="sitem rv"><div class="shead"><span class="sno">01</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg></div><div>
-      <h3><span class="w">次の売り場へ。</span></h3>
-      <p class="sub">ブランドの今と世界観に合う出店先を、ご紹介します。</p>
-      <p class="tags">商業施設 ／ 百貨店 ／ ギャラリー ／ 単独ポップアップ</p>
-      <p class="note">※出店には各施設の審査があり、出店を保証するものではありません。</p>
-    </div></div><div class="sitem rv"><div class="shead"><span class="sno">02</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg></div><div>
-      <h3><span class="w">好きなブランドを、</span><span class="w">長く続けるために。</span></h3>
-      <p class="sub">売上の先に、きちんと利益を。数字が得意でなくても大丈夫です。</p>
-      <p class="tags">価格のつけ方 ／ 原価 ／ 在庫 ／ 出店費用</p>
-      
-    </div></div><div class="sitem rv"><div class="shead"><span class="sno">03</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11v8H9l-4 3v-3H4z"/><path d="M15 9h5v8h-1v3l-4-3h-4v-2"/></svg></div><div>
-      <h3><span class="w">一人では難しい判断に、</span><span class="w">相談できる相手を。</span></h3>
-      <p class="sub">出店の条件や交渉を、事業の目線で一緒に考えます。</p>
-      <p class="tags">出店料 ／ 販売手数料 ／ 在庫の扱い ／ 販売体制</p>
-      
-    </div></div><div class="sitem rv"><div class="shead"><span class="sno">04</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8" r="2.5"/><path d="M3 20c0-3 2.2-5 5-5s5 2 5 5"/><path d="M12.5 17c.6-2 2.1-3 4-3 2.5 0 4.5 1.8 4.5 5"/></svg></div><div>
-      <h3><span class="w">必要なときに、</span><span class="w">必要なプロと。</span></h3>
-      <p class="sub">全部、自分でできなくていい。課題に合わせて専門の事業者をご紹介します。</p>
-      <p class="tags">什器 ／ 照明 ／ 内装 ／ 販売スタッフ ／ ECサイト</p>
-      <p class="note">※外部事業者への依頼費用は別途発生する場合があります。</p>
-    </div></div><div class="sitem rv"><div class="shead"><span class="sno">05</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c4 0 3-7 7-7s3-7 7-7"/><circle cx="5" cy="19" r="2"/><path d="M16 5h3v3"/></svg></div><div>
-      <h3><span class="w">一度の出店で、</span><span class="w">終わらせない。</span></h3>
-      <p class="sub">目指す未来に合わせて、次の一歩を考え続けます。</p>
-      <p class="tags">次のポップアップ ／ 新しい販路 ／ 自社ECの強化 ／ 海外展開</p>
-      
-    </div></div></div>
+    <ul class="sgrid"><li class="rv"><span class="sno">01</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg><b>出店先の紹介</b><span class="stag">商業施設・百貨店・ギャラリー</span></li><li class="rv"><span class="sno">02</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg><b>利益の相談</b><span class="stag">価格・原価・在庫・出店費用</span></li><li class="rv"><span class="sno">03</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11v8H9l-4 3v-3H4z"/><path d="M15 9h5v8h-1v3l-4-3h-4v-2"/></svg><b>交渉の相談</b><span class="stag">出店料・手数料・販売体制</span></li><li class="rv"><span class="sno">04</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8" r="2.5"/><path d="M3 20c0-3 2.2-5 5-5s5 2 5 5"/><path d="M12.5 17c.6-2 2.1-3 4-3 2.5 0 4.5 1.8 4.5 5"/></svg><b>プロの紹介</b><span class="stag">什器・内装・スタッフ・EC</span></li><li class="rv"><span class="sno">05</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c4 0 3-7 7-7s3-7 7-7"/><circle cx="5" cy="19" r="2"/><path d="M16 5h3v3"/></svg><b>次の一歩</b><span class="stag">新しい販路・EC強化・海外</span></li></ul>
   </div>
 </section>
 <section class="members">
@@ -436,18 +463,14 @@ footer .fig:hover{color:#fff}
 <section class="partner">
   <div class="wrap read c">
     <h2 class="rv"><span class="w">最初の50ブランドと、</span><br><span class="w">新しい当たり前を</span><span class="w">つくりたい。</span></h2>
-    <p class="rv"><span class="w">ポップアップ協会は、</span><span class="w">まだ始まったばかりの協会です。</span><br><span class="w">本当に必要な支援の答えを、</span><br><span class="w">ブランドを</span><span class="w">育ててきた皆さんと</span><span class="w">一緒につくりたい。</span></p>
-    <p class="rv"><span class="w">そこで今回、</span><br><span class="w">すでに</span><span class="w">自分のブランドを持ち、</span><br><span class="w">次のステージを</span><span class="w">目指す50名を、</span></p>
-    <p class="badge rv">「第1期 創業パートナー」</p>
-    <p class="rv"><span class="w">としてお迎えします。</span></p>
-  </div>
-  <div class="wrap">
-    <div class="card rv">
-      <h3>創業パートナーとして、ご一緒したいこと。</h3>
-      <p class="free"><span class="w">第1期 創業パートナー</span><span class="w">50ブランドのみ、</span><br><span class="w">協会会費・個別伴走支援ともに</span><span class="w">完全無料。</span></p>
-      <p class=""><span class="w">ブランドの現在地や</span><span class="w">目指す未来に合わせて、</span><br><span class="w">出店や経営、</span><span class="w">事業成長に向けた取り組みを</span><span class="w">一緒に進めます。</span></p>
-      <div class="ctabox"><p class="freeline"><span class="freetag">無料</span><span class="ftxt"><span class="w">第1期 創業パートナー</span><span class="w">50ブランドのみ、</span><span class="w">完全無料です</span></span></p><a class="btn" href="#form">エントリーする</a></div>
+    <div class="fifty rv">
+      <p class="f-num">50<small>ブランド</small></p>
+      <p class="f-name">第1期 創業パートナー</p>
+      <p class="f-who"><span class="w">すでに自分のブランドを持ち、</span><span class="w">次のステージを目指す方</span></p>
+      <p class="f-free"><span class="freetag">無料</span><span class="ftxt"><span class="w">協会会費・個別伴走支援ともに</span><span class="w">完全無料</span></span></p>
+      <a class="btn" href="#form">エントリーする</a>
     </div>
+
   </div>
 </section>
 <section class="who">
@@ -461,8 +484,7 @@ footer .fig:hover{color:#fff}
       <li>いつか全国へ、海外へと広げたい</li>
       <li>これまでの経験を、次に挑戦する人に伝えたい</li>
     </ul>
-    <p class="rv"><span class="w">ブランドの規模や、</span><span class="w">出店の回数は問いません。</span></p>
-    <p class="rv em"><span class="w">今より、</span><span class="w">もう一歩先へ。</span><br><span class="w">そう思っているあなたと、</span><span class="w">お会いできたら嬉しいです。</span></p>
+    <p class="nomatter rv">規模も、出店の回数も問いません。</p>
   </div>
 </section>
 <section class="cta" id="form">
