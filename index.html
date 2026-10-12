@@ -258,6 +258,50 @@ footer b{color:#fff;letter-spacing:.14em}
 .ig-note a,.done a{color:var(--rose);font-weight:700;text-decoration:none;border-bottom:1px solid rgba(217,63,99,.4);word-break:break-all}
 footer .fig{color:rgba(255,255,255,.8);text-decoration:none;font-size:13px;letter-spacing:.06em}
 footer .fig:hover{color:#fff}
+
+/* ===== visual pass ===== */
+.ic{width:30px;height:30px;fill:none;stroke:var(--rose);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;display:block}
+.story h2{margin-bottom:1em}
+/* voices as 2-col bubbles */
+.voices2{max-width:860px;margin:36px auto 40px;display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;text-align:left}
+.voices2 li{position:relative;background:#fff;border-radius:18px 18px 18px 6px;padding:16px 18px;color:var(--deep);font-size:clamp(14px,1.6vw,16px);line-height:1.7;box-shadow:0 10px 24px -18px rgba(61,27,44,.45)}
+.voices2 li:nth-child(even){border-radius:18px 18px 6px 18px;background:#FFF7F9}
+/* talent cards */
+.tcards{max-width:900px;margin:8px auto 36px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.tcards li{background:var(--paper);border-radius:18px;padding:22px 8px 18px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.tcards li:nth-child(2){transform:translateY(10px)}.tcards li:nth-child(4){transform:translateY(10px)}
+.tcards b{color:var(--deep);font-size:clamp(13px,1.45vw,15px);letter-spacing:.06em;line-height:1.5}
+/* about 3 steps */
+.steps3{max-width:900px;margin:40px auto 44px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s3}
+.steps3 li{position:relative;padding:26px 18px 22px;background:#fff;border-radius:18px;box-shadow:0 12px 28px -22px rgba(217,63,99,.6);display:flex;flex-direction:column;align-items:center;gap:8px;margin:0 14px}
+.steps3 li:not(:last-child)::after{content:"";position:absolute;right:-22px;top:50%;width:14px;height:14px;border-top:2px solid var(--pink);border-right:2px solid var(--pink);transform:translateY(-50%) rotate(45deg)}
+.steps3 b{color:var(--deep);font-size:clamp(17px,2vw,19px);letter-spacing:.1em}
+.steps3 span{color:var(--sub);font-size:clamp(13px,1.4vw,14px);line-height:1.7}
+/* supports */
+.sitems{max-width:900px;margin:0 auto;border-top:1px solid var(--line)}
+.sitem{display:grid;grid-template-columns:clamp(70px,11vw,120px) 1fr;gap:0 clamp(14px,3vw,36px);padding:clamp(24px,3.4vw,36px) 0;border-bottom:1px solid var(--line);text-align:left}
+.shead{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.sno{font-family:var(--num);font-weight:300;font-size:clamp(30px,4.6vw,48px);line-height:1;color:var(--pink)}
+.sitem h3{font-size:clamp(17px,2.1vw,21px)}
+.sitem .sub{margin-top:.4em !important;color:var(--text)}
+.sitem .tags{margin-top:.6em !important;color:var(--rose);font-weight:600;font-size:clamp(13px,1.45vw,14px);letter-spacing:.04em;line-height:1.8}
+.sitem .note{margin-top:.5em !important;color:var(--sub);font-size:12px;line-height:1.7}
+/* checklist */
+.checks{max-width:600px;margin:0 auto 2em;text-align:left;display:grid;gap:10px}
+.checks li{position:relative;background:#fff;border-radius:14px;padding:14px 16px 14px 52px;color:var(--deep);font-weight:600;line-height:1.6;box-shadow:0 8px 20px -18px rgba(61,27,44,.5);font-size:clamp(14px,1.6vw,16px)}
+.checks li::before{content:"";position:absolute;left:16px;top:50%;width:22px;height:22px;margin-top:-11px;border-radius:6px;background:linear-gradient(135deg,var(--pink),var(--rose))}
+.checks li::after{content:"";position:absolute;left:23px;top:50%;width:6px;height:11px;margin-top:-8px;border-right:2.5px solid #fff;border-bottom:2.5px solid #fff;transform:rotate(45deg)}
+.who{background:linear-gradient(180deg,#FFF6F8,#FFFAFB)}
+@media (max-width:720px){
+  .voices2{grid-template-columns:1fr}
+  .tcards{grid-template-columns:repeat(3,1fr)}
+  .tcards li:nth-child(2),.tcards li:nth-child(4){transform:none}
+  .steps3{grid-template-columns:1fr;gap:26px}
+  .steps3 li{margin:0}
+  .steps3 li:not(:last-child)::after{right:auto;left:50%;top:auto;bottom:-20px;transform:translateX(-50%) rotate(135deg)}
+  .sitem{grid-template-columns:56px 1fr}
+}
+@media (max-width:720px){.tcards{grid-template-columns:repeat(3,1fr);gap:10px}.tcards li{padding:18px 4px 14px}.tcards b{font-size:13px}}
 </style>
 </head>
 <body>
@@ -287,17 +331,14 @@ footer .fig:hover{color:#fff}
 </section>
 <section class="story">
   <div class="wrap read c">
-    <h2 class="rv"><span class="w">はじめて売れた日のことを、</span><span class="w">覚えていますか。</span></h2>
-    <p class="rv"><span class="w">自分が生み出したものを、</span><br><span class="w">誰かが「欲しい」と</span><span class="w">言ってくれた日。</span><br><span class="w">目の前で商品を手に取り、</span><br><span class="w">嬉しそうに</span><span class="w">持ち帰ってくれた日。</span></p>
-    <p class="rv em"><span class="w">自分の「好き」が、</span><span class="w">誰かの「好き」になった。</span></p>
-    <p class="rv"><span class="w">あの瞬間の喜びは、</span><span class="w">きっと今も忘れられないも</span><span class="w">のだと思います。</span><br><span class="w">だから、</span><span class="w">ここまで続けてこられた。</span></p>
-    <p class="rv"><span class="w">何度も試作を重ねて、</span><br><span class="w">思うように売れない日も</span><span class="w">乗り越えて、</span><br><span class="w">少しずつブランドを</span><span class="w">育ててきた。</span></p>
+    <h2 class="rv"><span class="w">はじめて売れた日のことを、</span><br><span class="w">覚えていますか。</span></h2>
+    <p class="rv"><span class="w">自分の「好き」が、</span><br><span class="w">誰かの「好き」になった日。</span><br><span class="w">だから、</span><span class="w">ここまで続けてこられた。</span></p>
   </div>
 </section>
 <section class="story dusk">
-  <div class="wrap read c">
+  <div class="wrap c">
     <p class="rv lead-big"><span class="w">でも、</span></p>
-    <ul class="voices rv">
+    <ul class="voices2 rv">
       <li>次はどこに出店しよう。</li>
       <li>売上は増えているのに、利益が思うように残らない。</li>
       <li>作るのも、売るのも、発信も、全部ひとり。</li>
@@ -305,21 +346,21 @@ footer .fig:hover{color:#fff}
       <li>自分のお店を、ネットにも持ちたい。</li>
       <li>もっと多くの人に届けるには、どうしたらいいんだろう。</li>
     </ul>
-    <p class="rv"><span class="w">好きで始めたはずなのに、</span><br><span class="w">好きだけでは続けられない。</span><br><span class="w">そんな現実に、</span><span class="w">向き合っている人も</span><span class="w">いるかもしれません。</span></p>
+    <p class="rv em"><span class="w">好きで始めたはずなのに、</span><br><span class="w">好きだけでは続けられない。</span></p>
   </div>
 </section>
 <section class="talent">
-  <div class="wrap read c">
-    <ul class="talents rv">
-      <li>素敵なものをつくる才能。</li>
-      <li>その魅力を伝える才能。</li>
-      <li>売り場をつくる才能。</li>
-      <li>数字を管理する才能。</li>
-      <li>ブランドを大きく育てる才能。</li>
+  <div class="wrap c">
+    <h2 class="rv"><span class="w">必要な力は、</span><span class="w">ひとつではありません。</span></h2>
+    <ul class="tcards rv">
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 4.8L19 10l-4.8 2.2L12 17l-2.2-4.8L5 10l4.8-2.2z"/><path d="M19 17l.8 1.7 1.7.8-1.7.8L19 22l-.8-1.7-1.7-.8 1.7-.8z"/></svg><b>つくる</b></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l6 4V6L7 10z"/><path d="M16.5 9a4 4 0 010 6"/><path d="M19 6.5a7.5 7.5 0 010 11"/></svg><b>伝える</b></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg><b>売り場を<br>つくる</b></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg><b>数字を<br>管理する</b></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 15c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/></svg><b>大きく<br>育てる</b></li>
     </ul>
-    <p class="rv"><span class="w">必要な力は、</span><span class="w">ひとつではありません。</span><br><span class="w">だからこそ、</span><span class="w">すべてを一人で</span><span class="w">持っている必要も</span><span class="w">ないのです。</span></p>
-    <p class="rv"><span class="w">あなたが大切に</span><span class="w">してきた世界観を、</span><br><span class="w">もっと多くの人に</span><span class="w">届けるために。</span><br><span class="w">あなたが本当に</span><span class="w">やりたいことに、</span><br><span class="w">もっと時間を使えるように。</span></p>
-    <p class="rv em"><span class="w">つくる人が、</span><span class="w">つくることに</span><span class="w">夢中でいられる。</span><br><span class="w">そんなブランドの育て方が</span><span class="w">あってもいい。</span><br><span class="w">私たちは、</span><span class="w">そう考えています。</span></p>
+    <p class="rv"><span class="w">すべてを一人で</span><span class="w">持っている必要は</span><span class="w">ありません。</span></p>
+    <p class="rv em"><span class="w">つくる人が、</span><span class="w">つくることに</span><span class="w">夢中でいられる。</span><br><span class="w">そんなブランドの育て方が</span><span class="w">あってもいい。</span></p>
   </div>
 </section>
 <section class="journey">
@@ -344,47 +385,44 @@ footer .fig:hover{color:#fff}
   </div>
 </section>
 <section class="about">
-  <div class="wrap read c">
+  <div class="wrap c">
     <h2 class="rv">ポップアップ協会について</h2>
     <p class="rv"><span class="w">ブランドをつくる人の、</span><br><span class="w">出店と事業成長を</span><span class="w">支える協会です。</span></p>
-    <ul class="asks rv">
-      <li>どんな想いで、このブランドを始めたのか。</li>
-      <li>これまで、どんな道を歩いてきたのか。</li>
-      <li>今、どんなことに悩んでいるのか。</li>
-      <li>そして、これからどんな景色を見てみたいのか。</li>
-    </ul>
-    <p class="rv"><span class="w">どこを目指すかで、</span><span class="w">準備も道のりも変わります。</span><br><span class="w">だから、</span><span class="w">あなたが</span><span class="w">目指す未来から逆算して、</span><br><span class="w">やることを一緒に決めます。</span></p>
-    <p class="rv"><span class="w">計画を立てるだけではなく、</span><br><span class="w">その先の相談や</span><span class="w">専門家とのつながりも。</span></p>
-    <p class="rv em"><span class="w">一人で決めていたことを、</span><span class="w">相談できる相手がいる。</span><br><span class="w">それが、</span><span class="w">ポップアップ協会の役割です。</span></p>
+    <ol class="steps3 rv">
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9a5 5 0 0110 0c0 3-3 3.5-3 6.5A2.5 2.5 0 0111.5 18"/><path d="M10 9.5a2 2 0 014 0"/></svg><b>聞く</b><span>想い・歩み・悩み・見てみたい景色</span></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M8 3v3M16 3v3M8 11h8M8 15h5"/></svg><b>組み立てる</b><span>目指す未来から逆算して、やることを決める</span></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c4 0 3-7 7-7s3-7 7-7"/><circle cx="5" cy="19" r="2"/><path d="M16 5h3v3"/></svg><b>伴走する</b><span>担当への相談と、専門家とのつながり</span></li>
+    </ol>
+    <p class="rv em"><span class="w">一人で決めていたことを、</span><br><span class="w">相談できる相手がいる。</span></p>
   </div>
 </section>
 <section class="do">
   <div class="wrap">
     <h2 class="rv">ブランドの未来を広げる、5つのサポート。</h2>
-    <div class="items"><div class="item rv"><div class="no">01</div><div>
+    <div class="sitems"><div class="sitem rv"><div class="shead"><span class="sno">01</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg></div><div>
       <h3><span class="w">次の売り場へ。</span></h3>
-      <p class="sub"><span class="w">あなたのブランドに、</span><span class="w">ふさわしい舞台を。</span></p>
-      <p class=""><span class="w">商業施設や百貨店など、</span><br><span class="w">ブランドの現在地や世界観に</span><span class="w">合わせた出店先を検討し、</span><span class="w">ご紹介します。</span><br><span class="w">大切なのは、</span><span class="w">ただ出店回数を増や</span><span class="w">すことではありません。</span><br><span class="w">どんな場所で、</span><span class="w">どんなお客様と出会い、</span><br><span class="w">どんな実績を</span><span class="w">積み重ねていくのか。</span><br><span class="w">その先の未来を見据えて、</span><br><span class="w">出店の道筋を</span><span class="w">一緒に考えます。</span></p>
-      <p class="note"><span class="w">※出店には</span><span class="w">各施設の審査があり、</span><span class="w">出店を保証するも</span><span class="w">のではありません。</span></p>
-    </div></div><div class="item rv"><div class="no">02</div><div>
+      <p class="sub">ブランドの今と世界観に合う出店先を、ご紹介します。</p>
+      <p class="tags">商業施設 ／ 百貨店 ／ ギャラリー ／ 単独ポップアップ</p>
+      <p class="note">※出店には各施設の審査があり、出店を保証するものではありません。</p>
+    </div></div><div class="sitem rv"><div class="shead"><span class="sno">02</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg></div><div>
       <h3><span class="w">好きなブランドを、</span><span class="w">長く続けるために。</span></h3>
-      <p class="sub"><span class="w">売上の先に、</span><span class="w">きちんと利益を。</span></p>
-      <p class=""><span class="w">価格のつけ方、</span><span class="w">原価、</span><span class="w">在庫、</span><span class="w">出店費用。</span><br><span class="w">商品が売れる喜びと</span><span class="w">同じくらい、</span><br><span class="w">事業として続けられること</span><span class="w">も大切です。</span><br><span class="w">数字が得意でなくても、</span><span class="w">大丈夫。</span><br><span class="w">今の状況を一緒に整理し、</span><br><span class="w">ブランドを</span><span class="w">続けるための経営を</span><span class="w">考えます。</span></p>
+      <p class="sub">売上の先に、きちんと利益を。数字が得意でなくても大丈夫です。</p>
+      <p class="tags">価格のつけ方 ／ 原価 ／ 在庫 ／ 出店費用</p>
       
-    </div></div><div class="item rv"><div class="no">03</div><div>
+    </div></div><div class="sitem rv"><div class="shead"><span class="sno">03</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11v8H9l-4 3v-3H4z"/><path d="M15 9h5v8h-1v3l-4-3h-4v-2"/></svg></div><div>
       <h3><span class="w">一人では難しい判断に、</span><span class="w">相談できる相手を。</span></h3>
-      <p class="sub"><span class="w">知らないことで、</span><span class="w">可能性を狭めない。</span></p>
-      <p class=""><span class="w">出店料や販売手数料、</span><span class="w">在庫の扱い、</span><span class="w">販売体制。</span><br><span class="w">出店には、</span><span class="w">さまざまな条件や</span><span class="w">交渉があります。</span><br><span class="w">一人では</span><span class="w">判断しづらいことも、</span><br><span class="w">事業の視点から一緒に</span><span class="w">考えます。</span></p>
+      <p class="sub">出店の条件や交渉を、事業の目線で一緒に考えます。</p>
+      <p class="tags">出店料 ／ 販売手数料 ／ 在庫の扱い ／ 販売体制</p>
       
-    </div></div><div class="item rv"><div class="no">04</div><div>
+    </div></div><div class="sitem rv"><div class="shead"><span class="sno">04</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8" r="2.5"/><path d="M3 20c0-3 2.2-5 5-5s5 2 5 5"/><path d="M12.5 17c.6-2 2.1-3 4-3 2.5 0 4.5 1.8 4.5 5"/></svg></div><div>
       <h3><span class="w">必要なときに、</span><span class="w">必要なプロと。</span></h3>
-      <p class="sub"><span class="w">全部、</span><span class="w">自分でできなくていい。</span></p>
-      <p class=""><span class="w">什器、</span><span class="w">照明、</span><span class="w">内装、</span><span class="w">販売スタッフ、</span><span class="w">ECサイト。</span><br><span class="w">ブランドを</span><span class="w">育てていく過程では、</span><br><span class="w">さまざまな専門家の力が</span><span class="w">必要になります。</span><br><span class="w">協会に</span><span class="w">参画・協業する事業者と</span><span class="w">のつながりを活かし、</span><br><span class="w">課題に</span><span class="w">合わせて専門の事業者を</span><span class="w">ご紹介します。</span></p>
-      <p class="note"><span class="w">※外部事業者への依頼費用は</span><span class="w">別途発生する場合が</span><span class="w">あります。</span></p>
-    </div></div><div class="item rv"><div class="no">05</div><div>
+      <p class="sub">全部、自分でできなくていい。課題に合わせて専門の事業者をご紹介します。</p>
+      <p class="tags">什器 ／ 照明 ／ 内装 ／ 販売スタッフ ／ ECサイト</p>
+      <p class="note">※外部事業者への依頼費用は別途発生する場合があります。</p>
+    </div></div><div class="sitem rv"><div class="shead"><span class="sno">05</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c4 0 3-7 7-7s3-7 7-7"/><circle cx="5" cy="19" r="2"/><path d="M16 5h3v3"/></svg></div><div>
       <h3><span class="w">一度の出店で、</span><span class="w">終わらせない。</span></h3>
-      <p class="sub"><span class="w">その先の未来まで、</span><span class="w">見据えて。</span></p>
-      <p class=""><span class="w">次のポップアップ。</span><br><span class="w">新しい販路。</span><br><span class="w">自社ECの強化。</span><br><span class="w">そして、</span><span class="w">いつかの海外展開。</span><br><span class="w">一度の成功で</span><span class="w">終わるのではなく、</span><br><span class="w">ブランドが</span><span class="w">これからどう育っていくのか。</span><br><span class="w">あなたの目指す未来に</span><span class="w">合わせて、</span><br><span class="w">次の一歩を考え続けます。</span></p>
+      <p class="sub">目指す未来に合わせて、次の一歩を考え続けます。</p>
+      <p class="tags">次のポップアップ ／ 新しい販路 ／ 自社ECの強化 ／ 海外展開</p>
       
     </div></div></div>
   </div>
@@ -398,9 +436,7 @@ footer .fig:hover{color:#fff}
 <section class="partner">
   <div class="wrap read c">
     <h2 class="rv"><span class="w">最初の50ブランドと、</span><br><span class="w">新しい当たり前を</span><span class="w">つくりたい。</span></h2>
-    <p class="rv"><span class="w">ポップアップ協会は、</span><br><span class="w">まだ始まったばかりの協会です。</span><br><span class="w">だからこそ、</span><span class="w">最初から完成された答えを</span><br><span class="w">用意しているわけで</span><span class="w">はありません。</span></p>
-    <p class="rv"><span class="w">本当にブランドオーナーに</span><span class="w">必要な支援とは、</span><span class="w">何だろう。</span><br><span class="w">どんなつながりがあれば、</span><br><span class="w">もっと自由に</span><span class="w">挑戦できるだろう。</span><br><span class="w">どんな仕組みがあれば、</span><br><span class="w">素敵なブランドが、</span><span class="w">もっと長く愛されるだろう。</span></p>
-    <p class="rv"><span class="w">その答えを、</span><span class="w">実際にブランドを</span><span class="w">育ててきた皆さんと</span><span class="w">一緒につくりたい。</span></p>
+    <p class="rv"><span class="w">ポップアップ協会は、</span><span class="w">まだ始まったばかりの協会です。</span><br><span class="w">本当に必要な支援の答えを、</span><br><span class="w">ブランドを</span><span class="w">育ててきた皆さんと</span><span class="w">一緒につくりたい。</span></p>
     <p class="rv"><span class="w">そこで今回、</span><br><span class="w">すでに</span><span class="w">自分のブランドを持ち、</span><br><span class="w">次のステージを</span><span class="w">目指す50名を、</span></p>
     <p class="badge rv">「第1期 創業パートナー」</p>
     <p class="rv"><span class="w">としてお迎えします。</span></p>
@@ -408,22 +444,22 @@ footer .fig:hover{color:#fff}
   <div class="wrap">
     <div class="card rv">
       <h3>創業パートナーとして、ご一緒したいこと。</h3>
-      <p class="free"><span class="w">第1期 創業パートナー50ブランドのみ、</span><br><span class="w">協会会費・個別伴走支援ともに完全無料。</span></p>
+      <p class="free"><span class="w">第1期 創業パートナー</span><span class="w">50ブランドのみ、</span><br><span class="w">協会会費・個別伴走支援ともに</span><span class="w">完全無料。</span></p>
       <p class=""><span class="w">ブランドの現在地や</span><span class="w">目指す未来に合わせて、</span><br><span class="w">出店や経営、</span><span class="w">事業成長に向けた取り組みを</span><span class="w">一緒に進めます。</span></p>
-      <div class="ctabox"><p class="freeline"><span class="freetag">無料</span><span class="ftxt"><span class="w">第1期 創業パートナー50ブランドのみ、</span><span class="w">完全無料です</span></span></p><a class="btn" href="#form">エントリーする</a></div>
+      <div class="ctabox"><p class="freeline"><span class="freetag">無料</span><span class="ftxt"><span class="w">第1期 創業パートナー</span><span class="w">50ブランドのみ、</span><span class="w">完全無料です</span></span></p><a class="btn" href="#form">エントリーする</a></div>
     </div>
   </div>
 </section>
 <section class="who">
   <div class="wrap read c">
     <h2 class="rv">こんな想いを持つ方と、出会いたい。</h2>
-    <ul class="wholist rv">
-      <li><span class="w">すでに</span><span class="w">自分のブランドを持ち、</span><br><span class="w">商品を販売している方。</span></li>
-      <li><span class="w">自分らしい世界観を</span><span class="w">大切にしながら、</span><br><span class="w">もっと多くのお客様に</span><span class="w">届けたい方。</span></li>
-      <li><span class="w">商業施設や百貨店への出店に</span><span class="w">挑戦したい方。</span></li>
-      <li><span class="w">売上や利益を見直し、</span><br><span class="w">ブランドを事業と</span><span class="w">して育てていきたい方。</span></li>
-      <li><span class="w">いつか全国へ、</span><span class="w">海外へと、</span><br><span class="w">新しい可能性を</span><span class="w">広げてみたい方。</span></li>
-      <li><span class="w">そして、</span><span class="w">これまでの経験を、</span><br><span class="w">これから挑戦する人に</span><span class="w">も伝えたい方。</span></li>
+    <ul class="checks rv">
+      <li>自分のブランドを持ち、商品を販売している</li>
+      <li>世界観を大切にしながら、もっと多くのお客様に届けたい</li>
+      <li>商業施設や百貨店への出店に挑戦したい</li>
+      <li>売上や利益を見直し、事業として育てたい</li>
+      <li>いつか全国へ、海外へと広げたい</li>
+      <li>これまでの経験を、次に挑戦する人に伝えたい</li>
     </ul>
     <p class="rv"><span class="w">ブランドの規模や、</span><span class="w">出店の回数は問いません。</span></p>
     <p class="rv em"><span class="w">今より、</span><span class="w">もう一歩先へ。</span><br><span class="w">そう思っているあなたと、</span><span class="w">お会いできたら嬉しいです。</span></p>
@@ -456,7 +492,7 @@ footer .fig:hover{color:#fff}
         <label>これまでの出店経験<small>任意</small><textarea name="これまでの出店経験"></textarea></label>
         <label>これから目指したいこと<small>任意</small><textarea name="これから目指したいこと"></textarea></label>
         <label>ご相談したいこと<small>任意</small><textarea name="ご相談したいこと"></textarea></label>
-        <p class="freeline"><span class="freetag">無料</span><span class="ftxt"><span class="w">第1期 創業パートナー50ブランドのみ、</span><span class="w">完全無料です</span></span></p>
+        <p class="freeline"><span class="freetag">無料</span><span class="ftxt"><span class="w">第1期 創業パートナー</span><span class="w">50ブランドのみ、</span><span class="w">完全無料です</span></span></p>
         <button class="btn" type="submit">エントリーする</button>
         <div class="ig-note"><b>DMでの連絡をご希望の方は、ポップアップ協会の公式Instagram（<a href="https://www.instagram.com/japan_pop_up_association/" target="_blank" rel="noopener">@japan_pop_up_association</a>）をフォローしてお待ちください。</b><span class="w">フォローしていないアカウントからのDMは</span><span class="w">「メッセージリクエスト」に届くため、</span><span class="w">ご案内に気づきにくい可能性があります。</span></div>
         <p class="privacy">※いただいた個人情報は、面談のご連絡および応募対応に使用します。詳細はプライバシーポリシーをご確認ください。</p>
