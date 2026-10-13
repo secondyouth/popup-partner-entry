@@ -360,6 +360,27 @@ footer .fig:hover{color:#fff}
 .madaA em{font-style:normal;color:var(--rose);font-weight:700;margin-right:.35em}
 .madaA b{font-weight:700;color:var(--deep)}
 @media (max-width:400px){.madaA li{font-size:16px;letter-spacing:.03em}}
+/* pairs */
+.pairs{background:linear-gradient(180deg,#F6EBF0,#FFF6F8)}
+.pgrid{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left}
+.pcard{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 14px 32px -24px rgba(61,27,44,.55)}
+.pq{margin:0 !important;padding:14px 20px;background:#3D1B2C;color:#fff;font-weight:600;letter-spacing:.06em;font-size:clamp(14px,1.6vw,16px);line-height:1.6}
+.pq::before{content:"悩み";display:inline-block;font-size:11px;font-weight:700;background:rgba(255,255,255,.18);border-radius:4px;padding:0 6px;margin-right:10px;vertical-align:2px;letter-spacing:.1em}
+.pa{margin:0 !important;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.pa .ic{flex-shrink:0;width:34px;height:34px;margin-top:2px}
+.pa b{display:block;color:var(--deep);font-size:clamp(15px,1.75vw,17px);line-height:1.6;letter-spacing:.04em}
+.pa span{color:var(--sub);font-size:clamp(12px,1.4vw,14px);line-height:1.7}
+/* future */
+.future{max-width:620px;margin:40px auto 0;border:1.5px dashed rgba(217,63,99,.45);border-radius:20px;padding:22px clamp(16px,4vw,30px);text-align:left;background:rgba(255,255,255,.5)}
+.fu-ttl{margin:0 !important;text-align:center;font-weight:700;color:var(--deep);letter-spacing:.08em}
+.fu-ttl small{font-weight:400;color:var(--sub);margin-left:6px;font-size:12px}
+.future ul{margin-top:14px;display:grid;gap:12px}
+.future li{display:flex;gap:12px;align-items:flex-start}
+.future li .ic{flex-shrink:0;width:30px;height:30px}
+.future li b{display:block;color:var(--deep);line-height:1.6}
+.future li span{display:block;color:var(--sub);font-size:13px;line-height:1.7}
+@media (max-width:720px){.pgrid{grid-template-columns:1fr}}
+@media (max-width:720px){.sgrid li:last-child{grid-column:auto}}
 </style>
 </head>
 <body>
@@ -397,12 +418,14 @@ footer .fig:hover{color:#fff}
   <div class="wrap c">
     <p class="rv lead-big"><span class="w">でも、</span></p>
     <ul class="voices2 rv">
-      <li>次はどこに出店しよう。</li>
-      <li>売上は増えているのに、利益が思うように残らない。</li>
-      <li>作るのも、売るのも、発信も、全部ひとり。</li>
-      <li>こういうとき、誰に相談すればいいんだろう。</li>
-      <li>自分のお店を、ネットにも持ちたい。</li>
-      <li>もっと多くの人に届けるには、どうしたらいいんだろう。</li>
+      <li>出店料が高くて、売れなかったらマイナスになる。</li>
+      <li>増産、新作、発信。走り続けて、新しいアイデアが浮かばなくなった。</li>
+      <li>再販を回すうちに、小さなミスが続くようになった。</li>
+      <li>初めてのポップアップ。準備は数か月、夢に見るほどひとりで抱えていた。</li>
+      <li>空間はつくり込めたのに、来てくれた人を長く待たせてしまった。</li>
+      <li>次はどこに出せばいいのか、つなぎ方が分からない。</li>
+      <li>全部ひとりでやりたい。でも、もう手が回らない。</li>
+      <li>利益が思うように残らない。</li>
     </ul>
     <p class="rv em"><span class="w">好きで始めたはずなのに、</span><br><span class="w">好きだけでは続けられない。</span></p>
   </div>
@@ -418,6 +441,17 @@ footer .fig:hover{color:#fff}
       <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 15c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/></svg><b>大きく<br>育てる</b><i>一緒に</i></li>
     </ul>
     <p class="t-end rv"><span class="w">つくる人が、</span><span class="w">つくることに夢中でいられるように。</span></p>
+  </div>
+</section>
+<section class="pairs">
+  <div class="wrap c">
+    <h2 class="rv"><span class="w">反響が来てからが、</span><span class="w">いちばん大変。</span></h2>
+    <div class="pgrid">
+      <div class="pcard rv"><p class="pq">走り続けて、止まってしまう</p><p class="pa"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg><span><b>作業を棚卸しして、任せられる所は任せる</b>つくる時間と、休む時間を取り戻します</span></p></div>
+      <div class="pcard rv"><p class="pq">初めてのポップアップで、迎えきれない</p><p class="pa"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4h10v17"/><path d="M15 8h4v13"/><circle cx="12" cy="13" r=".8"/></svg><span><b>当日の運営まで、一緒に準備する</b>キャパ・待ち時間・動線・スタッフ</span></p></div>
+      <div class="pcard rv"><p class="pq">出店料で、赤字になる</p><p class="pa"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l6 8 6-8"/><path d="M12 12v8M8 14h8M8 17.5h8"/></svg><span><b>出す場所と値段を、数字から決める</b>売上から逆算した出店先と価格</span></p></div>
+      <div class="pcard rv"><p class="pq">次の場所へのつなぎ方が、分からない</p><p class="pa"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg><span><b>商業施設から百貨店まで、つなぐ</b>ブランドの今に合う出店先をご紹介</span></p></div>
+    </div>
   </div>
 </section>
 <section class="journey">
@@ -446,17 +480,17 @@ footer .fig:hover{color:#fff}
     <h2 class="rv">ポップアップ協会について</h2>
     <p class="rv"><span class="w">ブランドをつくる人の、</span><br><span class="w">出店と事業成長を</span><span class="w">支える協会です。</span></p>
     <ol class="steps3 rv">
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9a5 5 0 0110 0c0 3-3 3.5-3 6.5A2.5 2.5 0 0111.5 18"/><path d="M10 9.5a2 2 0 014 0"/></svg><b>聞く</b><span>想い・歩み・悩み・見てみたい景色</span></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M8 3v3M16 3v3M8 11h8M8 15h5"/></svg><b>組み立てる</b><span>目指す未来から逆算して、やることを決める</span></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c4 0 3-7 7-7s3-7 7-7"/><circle cx="5" cy="19" r="2"/><path d="M16 5h3v3"/></svg><b>伴走する</b><span>担当への相談と、専門家とのつながり</span></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9a5 5 0 0110 0c0 3-3 3.5-3 6.5A2.5 2.5 0 0111.5 18"/><path d="M10 9.5a2 2 0 014 0"/></svg><b>聞く</b><span>目指す場所と、今の困りごと</span></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg><b>棚卸しする</b><span>あなたがやること／任せられること</span></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 12V6a1.5 1.5 0 013 0v5M10 11V4.5a1.5 1.5 0 013 0V11M13 11V5.5a1.5 1.5 0 013 0V12M16 9a1.5 1.5 0 013 0v4c0 4-3 7-7 7s-6-2-7.5-5L3 12.5a1.5 1.5 0 012.5-1.5L7 13"/></svg><b>任せて、伴走する</b><span>担当と専門家が、一緒に進めます</span></li>
     </ol>
     <p class="rv em"><span class="w">一人で決めていたことを、</span><br><span class="w">相談できる相手がいる。</span></p>
   </div>
 </section>
 <section class="do">
   <div class="wrap c">
-    <h2 class="rv">ブランドの未来を広げる、5つのサポート。</h2>
-    <ul class="sgrid"><li class="rv"><span class="sno">01</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg><b>出店先の紹介</b><span class="stag">商業施設・百貨店・ギャラリー</span></li><li class="rv"><span class="sno">02</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V5"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg><b>利益の相談</b><span class="stag">価格・原価・在庫・出店費用</span></li><li class="rv"><span class="sno">03</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11v8H9l-4 3v-3H4z"/><path d="M15 9h5v8h-1v3l-4-3h-4v-2"/></svg><b>交渉の相談</b><span class="stag">出店料・手数料・販売体制</span></li><li class="rv"><span class="sno">04</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8" r="2.5"/><path d="M3 20c0-3 2.2-5 5-5s5 2 5 5"/><path d="M12.5 17c.6-2 2.1-3 4-3 2.5 0 4.5 1.8 4.5 5"/></svg><b>プロの紹介</b><span class="stag">什器・内装・スタッフ・EC</span></li><li class="rv"><span class="sno">05</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c4 0 3-7 7-7s3-7 7-7"/><circle cx="5" cy="19" r="2"/><path d="M16 5h3v3"/></svg><b>次の一歩</b><span class="stag">新しい販路・EC強化・海外</span></li></ul>
+    <h2 class="rv">ブランドの未来を広げる、6つのサポート。</h2>
+    <ul class="sgrid"><li class="rv"><span class="sno">01</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 005.3 0 2.7 2.7 0 005.4 0A2.7 2.7 0 0020 9"/><path d="M5.5 11.5V20h13v-8.5"/><path d="M10 20v-5h4v5"/></svg><b>出店先の紹介</b><span class="stag">商業施設・百貨店・ギャラリー</span></li><li class="rv"><span class="sno">02</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l6 8 6-8"/><path d="M12 12v8M8 14h8M8 17.5h8"/></svg><b>利益の相談</b><span class="stag">出店料・価格・原価・在庫</span></li><li class="rv"><span class="sno">03</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4h10v17"/><path d="M15 8h4v13"/><circle cx="12" cy="13" r=".8"/></svg><b>当日の運営</b><span class="stag">キャパ・待ち時間・動線</span></li><li class="rv"><span class="sno">04</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8" r="2.5"/><path d="M3 20c0-3 2.2-5 5-5s5 2 5 5"/><path d="M12.5 17c.6-2 2.1-3 4-3 2.5 0 4.5 1.8 4.5 5"/></svg><b>作業を任せる</b><span class="stag">什器・発送・スタッフ・EC</span></li><li class="rv"><span class="sno">05</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c4 0 3-7 7-7s3-7 7-7"/><circle cx="5" cy="19" r="2"/><path d="M16 5h3v3"/></svg><b>次の一歩</b><span class="stag">新しい販路・EC強化・海外</span></li><li class="rv"><span class="sno">06</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 18M15 3l-3 18"/></svg><b>ブランドを資産に</b><span class="stag">数字と仕組みを整え、売却も選べる状態へ</span></li></ul>
   </div>
 </section>
 <section class="members">
@@ -474,6 +508,13 @@ footer .fig:hover{color:#fff}
       <p class="f-who"><span class="w">すでに自分のブランドを持ち、</span><span class="w">次のステージを目指す方</span></p>
       <p class="f-free"><span class="freetag">無料</span><span class="ftxt"><span class="w">協会会費・個別伴走支援ともに</span><span class="w">完全無料</span></span></p>
       <a class="btn" href="#form">エントリーする</a>
+    </div>
+    <div class="future rv">
+      <p class="fu-ttl">創業パートナーと一緒に、つくりたいもの<small>（構想中）</small></p>
+      <ul>
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l6 8 6-8"/><path d="M12 12v8M8 14h8M8 17.5h8"/></svg><div><b>出店料を抑える仕組み</b><span>企業スポンサーと組んで、出店料の負担を軽くする</span></div></li>
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5"/><rect x="3" y="8" width="18" height="9" rx="2"/><path d="M7 14h10v7H7z"/></svg><div><b>つくり手のためのプリント工房</b><span>布・シール・紙もの・カット。家では置けない機材を、オンラインでも</span></div></li>
+      </ul>
     </div>
 
   </div>
@@ -521,7 +562,7 @@ footer .fig:hover{color:#fff}
         <label>ご相談したいこと<small>任意</small><textarea name="ご相談したいこと"></textarea></label>
         <p class="freeline"><span class="freetag">無料</span><span class="ftxt"><span class="w">第1期 創業パートナー</span><span class="w">50ブランドのみ、</span><span class="w">完全無料です</span></span></p>
         <button class="btn" type="submit">エントリーする</button>
-        <div class="ig-note"><b>DMでの連絡をご希望の方は、ポップアップ協会の公式Instagram（<a href="https://www.instagram.com/japan_pop_up_association/" target="_blank" rel="noopener">@japan_pop_up_association</a>）をフォローしてお待ちください。</b><span class="w">フォローしていないアカウントからのDMは</span><span class="w">「メッセージリクエスト」に届くため、</span><span class="w">ご案内に気づきにくい可能性があります。</span></div>
+        <div class="ig-note"><b>DMでの連絡をご希望の方は、ポップアップ協会の公式Instagram（<a href="https://www.instagram.com/japan_pop_up_association/" target="_blank" rel="noopener">@japan_pop_up_association</a>）をフォローしてお待ちください。</b><span class="w">フォローしていない</span><span class="w">アカウントからのDMは</span><span class="w">「メッセージリクエスト」に届くため、</span><span class="w">ご案内に気づきにくい可能性があります。</span></div>
         <p class="privacy">※いただいた個人情報は、面談のご連絡および応募対応に使用します。詳細はプライバシーポリシーをご確認ください。</p>
       </form>
       <div class="done" id="done"><b>エントリーを受け付けました。</b><p>ブランドスカウトが内容を選考のうえ、ご希望の方法でご連絡します。<br>DMをご希望の方は、公式Instagram（<a href="https://www.instagram.com/japan_pop_up_association/" target="_blank" rel="noopener">@japan_pop_up_association</a>）をフォローしてお待ちください。</p></div>
